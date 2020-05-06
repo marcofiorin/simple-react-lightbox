@@ -14,7 +14,7 @@ export function useLightbox() {
 export function closeInstance() {
   const ctx = useContext(SRLCtx)
 
-  const closeLightbox = slideIndex => {
+  const closeLightbox = () => {
     ctx.dispatch({ type: 'CLOSE_LIGHTBOX' })
   }
 
